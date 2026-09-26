@@ -318,19 +318,36 @@ export const HomePage: React.FC<HomePageProps> = ({
               return (
                 <div
                   key={exp.id}
-                  className="bg-slate-900/80 border border-purple-800/30 rounded-2xl p-6 space-y-4 hover:border-purple-500/50 transition-all duration-300 group"
+                  className="bg-slate-900/90 border border-purple-800/40 rounded-2xl overflow-hidden hover:border-purple-500/60 transition-all duration-300 group shadow-xl flex flex-col"
                 >
-                  <div className="w-12 h-12 rounded-xl bg-gradient-to-br from-purple-700 to-indigo-900 border border-purple-400/30 flex items-center justify-center text-white shadow-lg group-hover:scale-110 transition-transform">
-                    <IconComponent className="w-6 h-6" />
+                  {/* Card Image Header */}
+                  <div className="relative h-48 overflow-hidden bg-slate-950">
+                    <img
+                      src={exp.image}
+                      alt={exp.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                      referrerPolicy="no-referrer"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-slate-900 via-slate-900/30 to-transparent" />
+                    
+                    {/* Floating Icon Badge */}
+                    <div className="absolute top-3 left-3 w-10 h-10 rounded-xl bg-slate-950/80 backdrop-blur-md border border-purple-500/40 flex items-center justify-center text-purple-200 shadow-lg group-hover:scale-110 group-hover:bg-purple-600 group-hover:text-white transition-all">
+                      <IconComponent className="w-5 h-5" />
+                    </div>
                   </div>
 
-                  <h3 className="font-serif text-xl font-bold text-white">
-                    {exp.title}
-                  </h3>
+                  {/* Card Content Body */}
+                  <div className="p-5 flex-1 flex flex-col space-y-2 justify-between">
+                    <div className="space-y-2">
+                      <h3 className="font-serif text-xl font-bold text-white group-hover:text-purple-300 transition-colors">
+                        {exp.title}
+                      </h3>
 
-                  <p className="text-xs sm:text-sm text-purple-200/70 leading-relaxed">
-                    {exp.description}
-                  </p>
+                      <p className="text-xs sm:text-sm text-purple-200/75 leading-relaxed">
+                        {exp.description}
+                      </p>
+                    </div>
+                  </div>
                 </div>
               );
             })}

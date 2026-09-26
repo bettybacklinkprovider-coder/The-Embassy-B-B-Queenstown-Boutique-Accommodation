@@ -201,24 +201,28 @@ export const GUEST_EXPERIENCES = [
     id: 'comfort',
     title: 'Comfortable Stay',
     iconName: 'BedDouble',
+    image: deluxeRoomImage,
     description: 'Plush pillowtop beds, 100% Egyptian cotton sheets, silent double-glazed windows, and temperature-controlled rooms ensure deep restful sleep.'
   },
   {
     id: 'hospitality',
     title: 'Warm Kiwi Hospitality',
     iconName: 'HeartHandshake',
+    image: gourmetBreakfastImage,
     description: 'Friendly local hosts dedicated to your comfort. Daily cooked gourmet Kiwi breakfast with local organic produce and tailor-made travel tips.'
   },
   {
     id: 'peace',
     title: 'Peaceful Environment',
     iconName: 'Sparkles',
+    image: heroImage,
     description: 'Situated in the quiet Viscount Lane residential enclave of Frankton, away from downtown noise while enjoying pure mountain air and garden views.'
   },
   {
     id: 'location',
     title: 'Convenient Location',
     iconName: 'MapPin',
+    image: franktonTrailImage,
     description: '5 minutes from Queenstown Airport (ZQN), 3 minutes to Frankton Beach & Lake Wakatipu trail, and 8 minutes to Queenstown Town Centre.'
   }
 ];

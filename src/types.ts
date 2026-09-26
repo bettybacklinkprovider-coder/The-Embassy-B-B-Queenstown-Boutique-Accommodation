@@ -43,6 +43,14 @@ export interface FAQItem {
   category: string;
 }
 
+export interface GuestExperience {
+  id: string;
+  title: string;
+  iconName: string;
+  image: string;
+  description: string;
+}
+
 export interface BookingState {
   checkIn: string;
   checkOut: string;
