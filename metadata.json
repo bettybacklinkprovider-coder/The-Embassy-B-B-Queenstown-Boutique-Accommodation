@@ -1,0 +1,6 @@
+{
+  "name": "The Embassy B&B | Queenstown Boutique Accommodation",
+  "description": "Experience luxury, mountain views, and warm kiwi hospitality at The Embassy B&B in Frankton, Queenstown, New Zealand. Book your peaceful stay today.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
