@@ -36,7 +36,13 @@ export default function App() {
   return (
     <BrowserRouter>
       <ScrollToTop />
-      <div className="min-h-screen flex flex-col bg-[#0b0614] text-slate-100 font-sans selection:bg-purple-600 selection:text-white">
+      <div className="min-h-screen flex flex-col bg-[#0b0614] text-slate-100 font-sans selection:bg-purple-600 selection:text-white relative overflow-x-hidden">
+        
+        {/* Global Subtle Background Wallpaper */}
+        <div 
+          className="fixed inset-0 pointer-events-none z-0 opacity-20 bg-cover bg-center bg-no-repeat mix-blend-overlay"
+          style={{ backgroundImage: `url('https://res.cloudinary.com/k7og2ybq/image/upload/v1790425344/unnamed.jpg')` }}
+        />
         
         {/* Global Navigation Header */}
         <Header

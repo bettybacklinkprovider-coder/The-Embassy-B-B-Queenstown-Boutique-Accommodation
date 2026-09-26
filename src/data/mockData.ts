@@ -1,7 +1,8 @@
 import { Room, Attraction, GalleryImage, FAQItem } from '../types';
 
 // Generated image assets
-import heroImage from '../assets/images/hero_queenstown_embassy_1790421804178.jpg';
+import heroImageLocal from '../assets/images/hero_queenstown_embassy_1790421804178.jpg';
+const heroImage = 'https://res.cloudinary.com/k7og2ybq/image/upload/v1790425344/unnamed.jpg';
 import deluxeRoomImage from '../assets/images/room_deluxe_king_suite_1790421816439.jpg';
 import gourmetBreakfastImage from '../assets/images/breakfast_kiwi_gourmet_1790421828538.jpg';
 import franktonTrailImage from '../assets/images/frankton_trail_1790424274567.jpg';
